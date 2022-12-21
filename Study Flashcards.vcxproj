@@ -142,6 +142,13 @@
     <ClInclude Include="global.h" />
     <ClInclude Include="load_set.h" />
     <ClInclude Include="manage_set.h" />
+    <ClInclude Include="resource1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Study Flashcards1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\1873349951537856958-128.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
