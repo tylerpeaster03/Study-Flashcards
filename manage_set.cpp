@@ -81,7 +81,10 @@ void deleteFile()
 			<< "You can either try again, or manually remove the file via the directory of this program.\n\n";
 	}
 	else if (confirm == 2)
+	{
+		clearScreen();
 		return;
+	}
 
 }
 
