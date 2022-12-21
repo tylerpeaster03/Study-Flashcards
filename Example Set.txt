@@ -8,3 +8,5 @@ What is the main difference in arrays and vectors?
 Arrays have a set limit declared by the programmer, whilst vectors have no limit, instead being extended via .push_back commands.
 How many arrays or vectors can you have in a single program?
 As many as needed!
+Who created this C++ program?
+Tyler Peaster || https://github.com/tylerpeaster03

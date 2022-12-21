@@ -136,7 +136,7 @@ void loadAndOutputFlashcardSet::displaySet()
 		cout << setName << endl;
 		cout << "Card #" << location + 1 << " / " << term.size() << endl;
 		cout << "-------------------------------------\n";
-		cout << "\TERM: \n" << term[location];
+		cout << "TERM: \n" << term[location];
 		cout << endl << endl;
 
 		pressEnterToContinue("-------------------------------------\nFlip Card\t --- ENTER\n-------------------------------------\n");
@@ -145,7 +145,7 @@ void loadAndOutputFlashcardSet::displaySet()
 		cout << setName << endl;
 		cout << "Card #" << location + 1 << " / " << term.size() << endl;
 		cout << "-------------------------------------\n";
-		cout << "\DEFINITION: \n" << definition[location];
+		cout << "DEFINITION: \n" << definition[location];
 		cout << endl << endl;
 
 		cout
