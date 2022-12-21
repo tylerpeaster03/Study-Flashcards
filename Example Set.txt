@@ -1,0 +1,10 @@
+What library needs to be called for functions such as cout, cin, etc?
+#include <iostream>
+Without any namespaces used, would || cout << "Hello World!"; || cause any errors?
+Yes, as without any declared namespaces, you would need to type || std::cout<< "Hellow World!"; ||
+Is || system("cls"); || recommended to clear the user's screen?
+No, as || system("cls"); || calls an external windows program, which is a security risk!
+What is the main difference in arrays and vectors?
+Arrays have a set limit declared by the programmer, whilst vectors have no limit, instead being extended via .push_back commands.
+How many arrays or vectors can you have in a single program?
+As many as needed!
