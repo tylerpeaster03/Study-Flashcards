@@ -169,14 +169,14 @@ void loadAndOutputFlashcardSet::displaySet()
 		else if (choice == "1")
 		{
 			location++;
-			if (location >= term.size() - 1)
-				location = term.size() - 1;
+			if (location >= term.size())
+				location = 0;
 		}
 		else if (choice == "2")
 		{
 			location--;
 			if (location < 0)
-				location = 0;
+				location = term.size() - 1;
 		}
 		else if (choice == "3")
 		{
