@@ -222,7 +222,8 @@ void loadAndOutputFlashcardSet::shuffleSet(vector <string>& term, vector <string
 
 	for (int i = 0; i < term.size(); i++)
 	{
-		shufCount = to_string(i);
+		shufCount = to_string(i + 1000);
+
 		tempS = term[i] + shufCount;
 		termShuf.push_back(tempS);
 
@@ -243,7 +244,8 @@ void loadAndOutputFlashcardSet::shuffleSet(vector <string>& term, vector <string
 		x = indivTerm.size();
 		y = indivDef.size();
 
-		if (indivTerm[x - 1] == indivDef[y - 1])
+		if (indivTerm[x - 1] == indivDef[y - 1] && indivTerm[x - 2] == indivDef[y - 2]
+			&& indivTerm[x - 3] == indivDef[y - 3] && indivTerm[x - 4] == indivDef[y - 4])
 		{
 			tempS = indivTerm;
 			termOrg.push_back(tempS);
@@ -263,8 +265,8 @@ void loadAndOutputFlashcardSet::shuffleSet(vector <string>& term, vector <string
 		finTerm = termOrg[i];
 		finDef = defOrg[i];
 
-		finTerm = finTerm.substr(0, finTerm.length() - 1);
-		finDef = finDef.substr(0, finDef.length() - 1);
+		finTerm = finTerm.substr(0, finTerm.length() - 4);
+		finDef = finDef.substr(0, finDef.length() - 4);
 
 		term[i] = finTerm;
 		definition[i] = finDef;
