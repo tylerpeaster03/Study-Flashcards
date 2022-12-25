@@ -122,15 +122,4 @@ void editSetName()
 		clearScreen();
 		cout << "Sorry, something went wrong.\n" << "You can try again later, or manually change the set name in the directory of this program.\n\n";
 	}
-
-	/*
-	2AM Idea:
-	Google if file can be coppied in c++
-
-	otherwise,
-	ask user for new name
-	copy contents of selected file into array
-	output same array into new text file with edited name
-	use deleteFile() on prev file with same name 
-	*/
 }
