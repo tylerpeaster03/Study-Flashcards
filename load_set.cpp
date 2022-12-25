@@ -210,6 +210,12 @@ void loadAndOutputFlashcardSet::shuffleSet(vector <string>& term, vector <string
 	int k = 0, numericChoice{}, countOut = 0, countIn = 0, x = 0, y = 0;
 	string tempS, shufCount, indivTerm, indivDef, setName, choice, finTerm, finDef, shuffleConfirm;
 
+	cout << "\n\nLoading...";	
+	/*
+	Can only be seen by the user if the set is very large. 
+	Even at 10,000 terms, shuffling only takes a few seconds...
+	*/
+
 	//Clear variables for multiple shuffles
 	termShuf.clear();
 	defShuf.clear();
