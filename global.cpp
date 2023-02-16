@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <cstdlib>
 using namespace std;
 
 int cinIntCheck(int num)
@@ -23,4 +24,4 @@ void pressEnterToContinue(string text)
 	getline(cin, s);
 }
 
-void clearScreen() { cout << "\033[2J\033[1;1H"; }
+void clearScreen() { std::system("cls"); }
